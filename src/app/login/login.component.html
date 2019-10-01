@@ -1,0 +1,17 @@
+<form class="loginFrm" [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+  <img src="../../assets/images/logo.png" alt="brand logo" width="250px"><br>
+  <label >Email</label><br>
+  <input [style.color]="userValid ? 'black' : 'red' "  id="email" type="email" formControlName="email"><br>
+  <div class="errorMsg" *ngIf="!userValid">
+    *Invalid data, input an email
+  </div><br>
+  <label >Password</label><br>
+  <input [style.color]="passwordValid ? 'black' : 'red' "  id="password" type="password" formControlName="password"><br>
+  <div class="errorMsg" *ngIf="!passwordValid">
+    *Invalid data, incorrect length
+  </div><br>
+  <button class="button" type="submit">Login</button><br>
+  <div class="errorMsg" *ngIf="responseError">
+    Usuario o contraseña incorrectos
+  </div>
+</form>

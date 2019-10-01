@@ -1,0 +1,13 @@
+.container{
+    padding-top: 80px;
+}
+.img-container{
+    display: inline-block;
+    border-radius: 1000px;
+    overflow: hidden;
+}
+
+.name{
+    font-weight: bold;
+    font-size: 30px;
+}

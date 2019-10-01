@@ -1,0 +1,55 @@
+h2{
+    margin-top: 20px;
+    font-size: 25px;
+    color: #0087ff;
+}
+.list-users{
+    display: inline-block;
+    min-width: 100px;
+    width: 80%;
+    max-width: 400px;
+    margin-top: 20px;
+}
+
+.user{
+    cursor: pointer;
+    background-color: white;
+    border-radius: 5px;
+    padding: 10px;
+    display: block;
+    margin-bottom: 10px;
+    box-shadow: var(--boxShadow);
+    text-align: left;
+}
+
+
+.list-users .imgContainer{
+    min-width: 40px;
+    max-width: 40px;
+    min-height: 40px;
+    max-height: 40px;
+    border-radius: 1000px;
+    overflow: hidden;
+    margin-right: 10px;
+}
+.list-users .imgContainer,
+.list-users .data{
+    display: inline-block;
+    vertical-align: middle;
+}
+.list-users .data{
+    align-items: flex-start;
+}
+
+.list-users p{
+    text-align: left !important;
+    display: block;
+    font-weight: bold;
+    margin: 0px;
+}
+
+.list-users .email{
+    font-weight: normal;
+    color: gray;
+    margin: 0px;
+}

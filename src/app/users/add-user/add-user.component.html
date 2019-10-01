@@ -1,0 +1,17 @@
+<div class="container">
+    <h2>Add new User</h2>
+
+    <form [formGroup]="addUserForm" class="addContacts" (ngSubmit)="onSubmit()">
+            <label class="text-left" for="exampleInputEmail1">First Name</label>
+            <input  [style.color]="color_valid ? 'black' : 'red' " ng-style=" " type="text" class="form-control" formControlName="first_name" id="first_name" aria-describedby="first_name">
+        
+            <label class="text-left" for="exampleInputEmail1">Last Name</label>
+            <input  [style.color]="color_valid ? 'black' : 'red' " ng-style=" " type="text" class="form-control" formControlName="last_name" id="last_name" aria-describedby="last_name">
+        
+            <label >Email address</label><br>
+            <input  [style.color]="color_valid ? 'black' : 'red' " ng-style=" " type="email" class="form-control" formControlName="email" id="email">
+        
+        
+            <button type="submit" (click)="openModal(template)" class="btnAddUser">ADD USER</button>
+        </form> 
+    </div>

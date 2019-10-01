@@ -1,0 +1,39 @@
+.container{
+    display: block;
+    text-align: center;
+    align-items: center;
+    min-width: 250px;
+    width: 60%;
+    max-width: 400px;
+}
+.addContacts{
+    margin-bottom: 16px;
+}
+
+h2{
+    margin-top: 20px;
+    font-size: 25px;
+    color: #0087ff;
+}
+
+.btnAddUser{
+    margin-top: 40px;
+    display: block;
+    min-width: 100%;
+    width: 100%;
+    max-width: 100%;
+}
+
+label{
+    min-width: 100%;
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 0px;
+    color: gray;
+}
+input{
+    margin-top: 0px;
+    min-width: 100%;
+    width: 100%;
+    max-width: 100%;
+}

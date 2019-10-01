@@ -1,0 +1,33 @@
+.loginFrm{
+    position: absolute;
+    margin: 0px;
+    padding: 0px;
+    min-width: 100%;
+    max-width: 100%;
+    min-height: 100%;
+    max-height: auto;
+    background-color: var(--primaryColor);
+    left: 0px;
+    top: 0px;
+    box-sizing: border-box;
+    padding: 20px 40px;
+}
+
+.loginFrm img{
+    margin-top: 40px;
+}
+.loginFrm .errorMsg{
+    margin-top: 0px;
+    font-size: 12px;
+    display: inline-block;
+    text-align: right;
+    min-width: 100px;
+    width: 60%;
+    max-width: 400px;
+    color: yellow;
+}
+
+.loginFrm button{
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
