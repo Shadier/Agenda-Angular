@@ -19,7 +19,6 @@ export class AppComponent {
   }
 
   ngOnInit(){
-    console.log(this._router.url )
    
   }
 

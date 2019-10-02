@@ -1,7 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { UsersService } from "../shared/services/users/users.service";
-import { Router } from "@angular/router";
-import { TokenService } from "../shared/services/token/token.service";
 
 @Component({
   selector: 'app-users',
@@ -15,9 +13,7 @@ export class UsersComponent implements OnInit {
   totalItems: number = 10
 
   constructor(
-    private _userService: UsersService,
-    private _router: Router,
-    private _tokenService: TokenService) { }
+    private _userService: UsersService,) { }
 
   ngOnInit() {
     this.getUsers()
@@ -33,15 +29,12 @@ export class UsersComponent implements OnInit {
       this.page = 1;
       this.totalItems = response.total;
       this.pages = response.total_pages;
-      console.log(this.pages)
-      console.log(this.users)
     });
   }
   
   getPagedUsers(page){
     this._userService.getPagedUsers(page).subscribe(response => {
       this.users = response.data;
-      console.log(this.users)
     });
   }
 

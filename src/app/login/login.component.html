@@ -3,15 +3,15 @@
   <label >Email</label><br>
   <input [style.color]="userValid ? 'black' : 'red' "  id="email" type="email" formControlName="email"><br>
   <div class="errorMsg" *ngIf="!userValid">
-    *Invalid data, input an email
+    *Invalid data, input a valid email
   </div><br>
   <label >Password</label><br>
   <input [style.color]="passwordValid ? 'black' : 'red' "  id="password" type="password" formControlName="password"><br>
   <div class="errorMsg" *ngIf="!passwordValid">
-    *Invalid data, incorrect length
+    *Invalid data, incorrect length of password
   </div><br>
   <button class="button" type="submit">Login</button><br>
   <div class="errorMsg" *ngIf="responseError">
-    Usuario o contraseña incorrectos
+    *Wrong data, email or/and password are incorrect
   </div>
 </form>

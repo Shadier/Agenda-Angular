@@ -32,8 +32,20 @@ label{
     color: gray;
 }
 input{
-    margin-top: 0px;
     min-width: 100%;
     width: 100%;
     max-width: 100%;
+    text-align: left;
+    margin: 0px;
+}
+
+.errorMsg{
+    margin-top: 0px;
+    font-size: 12px;
+    display: inline-block;
+    text-align: right;
+    min-width: 100%;
+    width: 100%;
+    max-width: 100%;
+    color: var(--highlightColor);
 }
